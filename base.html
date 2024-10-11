@@ -28,242 +28,175 @@
 	</head>
 
 	<body>
-		<div class="goTop" onclick="toTop()">
-			<svg
-				width="70"
-				height="70"
-				viewBox="0 0 108 108"
-				fill="none"
-				xmlns="http://www.w3.org/2000/svg"
-			>
-				<g filter="url(#filter0_d_11_1802)">
-					<rect
-						x="4"
-						width="100"
-						height="100"
-						rx="13"
-						fill="#F8EC20"
-					/>
-				</g>
-				<path
-					fill-rule="evenodd"
-					clip-rule="evenodd"
-					d="M82.514 61.7718C81.9358 62.3058 81.0343 62.27 80.5003 61.6918L53.4394 32.3918C52.9054 31.8137 52.9412 30.9121 53.5194 30.3782C54.0975 29.8442 54.999 29.88 55.533 30.4582L82.594 59.7582C83.128 60.3363 83.0921 61.2379 82.514 61.7718Z"
-					fill="black"
-				/>
-				<path
-					fill-rule="evenodd"
-					clip-rule="evenodd"
-					d="M55.453 30.3782C56.0311 30.9121 56.0669 31.8137 55.533 32.3918L28.472 61.6918C27.938 62.27 27.0365 62.3058 26.4583 61.7718C25.8802 61.2379 25.8444 60.3363 26.3783 59.7582L53.4393 30.4582C53.9733 29.88 54.8748 29.8442 55.453 30.3782Z"
-					fill="black"
-				/>
-				<path
-					fill-rule="evenodd"
-					clip-rule="evenodd"
-					d="M76.6244 67.2763C76.1678 67.698 75.4557 67.6698 75.0339 67.2131L53.6595 44.0701C53.2377 43.6135 53.266 42.9014 53.7227 42.4796C54.1793 42.0579 54.8914 42.0861 55.3132 42.5428L76.6876 65.6858C77.1094 66.1424 77.0811 66.8545 76.6244 67.2763Z"
-					fill="black"
-				/>
-				<path
-					fill-rule="evenodd"
-					clip-rule="evenodd"
-					d="M55.2499 42.4796C55.7066 42.9014 55.7349 43.6135 55.3131 44.0701L33.9387 67.2131C33.5169 67.6698 32.8048 67.698 32.3482 67.2763C31.8915 66.8545 31.8632 66.1424 32.285 65.6858L53.6594 42.5428C54.0812 42.0861 54.7933 42.0579 55.2499 42.4796Z"
-					fill="black"
-				/>
-				<defs>
-					<filter
-						id="filter0_d_11_1802"
-						x="0"
-						y="0"
-						width="108"
-						height="108"
-						filterUnits="userSpaceOnUse"
-						color-interpolation-filters="sRGB"
-					>
-						<feFlood
-							flood-opacity="0"
-							result="BackgroundImageFix"
-						/>
-						<feColorMatrix
-							in="SourceAlpha"
-							type="matrix"
-							values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-							result="hardAlpha"
-						/>
-						<feOffset dy="4" />
-						<feGaussianBlur stdDeviation="2" />
-						<feComposite in2="hardAlpha" operator="out" />
-						<feColorMatrix
-							type="matrix"
-							values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-						/>
-						<feBlend
-							mode="normal"
-							in2="BackgroundImageFix"
-							result="effect1_dropShadow_11_1802"
-						/>
-						<feBlend
-							mode="normal"
-							in="SourceGraphic"
-							in2="effect1_dropShadow_11_1802"
-							result="shape"
-						/>
-					</filter>
-				</defs>
-			</svg>
-		</div>
-		<header class="header">
-			<span class="header__left">
-				<a href="/" class="header__logo-link">
-					<img
-						class="header__logo"
-						src="img/logo.svg"
-						alt="WAW"
-						width="45"
-					/>
-				</a>
-				<h1 class="header__title">Wjst</h1>
-			</span>
-			<span class="header__right">
-				<ul class="header__nav">
-					<li class="header__nav-item">
-						<a href="/" class="header__nav-link">Getting started</a>
-					</li>
-				</ul>
-
-				<ul class="header__nav">
-					<li class="header__nav-item">
-						<a
-							class="header__nav-link header__nav-link--github"
-							href="https://github.com/WebArtWork/wjst"
-							data-original-title="GitHub"
-							target="_blank"
-						>
-							<img
-								class="header__nav-icon"
-								src="img/github.svg"
-								alt="github"
-							/>
-						</a>
-					</li>
-				</ul>
-
-				<span
-					onclick="
-						toggleClass('sidebar', 'main-content__nav--show');
-						toggleClass('burger', 'burger--close')
-					"
-					class="header__nav header__nav--mobile"
-				>
-				<a
-					class="header__nav-link header__nav-link--github-mobile"
-					href="https://github.com/WebArtWork/wjst"
-					data-original-title="GitHub"
-					target="_blank"
-				>
-					<img
-						class="header__nav-icon"
-						src="img/github.svg"
-						alt="github"
-					/>
-				</a>
-					<div class="burger-wrap">
-						<div class="burger" id="burger"></div>
-					</div>
-				</span>
-			</span>
-		</header>
-		<div class="main-content">
-			<aside id="sidebar" class="main-content__nav">
-				<ul class="main-content__nav-wrap">
-					<li
-						class="main-content__nav-item main-content__nav-item--mobile"
-						item-url="/"
-					>
-						<a href="/" class="header__nav-link">Getting started</a>
-					</li>
-					{% for item in items %}
-					<li
-						class="main-content__nav-item"
-						item-url="{{{item.url}}}"
-					>
-						<a href="{{{item.url}}}" class="main-content__nav-link"
-							>{{{item.name}}}</a
-						>
-						<ul class="main-content__nav-in">
-							{% for _item in item.items %}
-							<li class="main-content__nav-in-item">
-								<a
-									href="{{{_item.url}}}"
-									class="main-content__nav-link"
-									>{{{_item.name}}}</a
-								>
-							</li>
-							{% endfor %}
-						</ul>
-					</li>
-					{% endfor %}
-				</ul>
-			</aside>
-			<main class="main-content__section">
-				<!-- HTML -->
-				<footer class="footer">
-					<p class="footer__text">
-						<span class="footer__text-part">Wjst is copyright ©2024 Web Art Work</span>
-						<span class="footer__text-part">
-							Licensed for use under the permissive MIT Open Source License.</span
-						>
-						<span class="footer__text-part">
-							Architected by Honchar Denys</span
-						>
-					</p>
-					<div class="footer-wrap">
-						<div class="footer__item-link">
-							<div class="footer__link-title">
-								Title for links
+		<div class="wrapper">
+			<div class="content">
+				<div class="first-screen">
+					<header class="header">
+						<div class="container">
+							<div class="header-wrap">
+								<div class="header-logo">
+									<div class="header-logo__svg">
+										<img src="img/logo.svg" alt="">
+									</div>
+									<div class="header-logo__text">
+										<span>НАЗВА</span>
+										ЛОГО
+									</div>
+								</div>
+								<ul class="header-navigtion">
+									<li>
+										<a href="">Меню пункт</a>
+									</li>
+									<li>
+										<a href="">Меню пункт</a>
+									</li>
+									<li>
+										<a href="">Меню пункт</a>
+									</li>
+									<li>
+										<a href="">Меню пункт</a>
+									</li>
+								</ul>
+								<div class="header-socials">
+									<a href="">
+										<img src="img/icons/call.svg" alt="">
+									</a>
+									<a href="">
+										<img src="img/icons/cart.svg" alt="">
+									</a>
+								</div>
 							</div>
-							<a href="" class="footer__link">
-								- Link here
-							</a>
-							<a href="" class="footer__link">
-								- Link here
-							</a>
-							<a href="" class="footer__link">
-								- Link here
-							</a>
 						</div>
-						<div class="footer__item-link footer__item-link--center">
-							<div class="footer__link-title">
-								Title for links
+					</header>
+					<div class="welcome">
+						<div class="container">
+							<div class="welcome__title">
+								НАЗВА
+								<span>НАШОГО САЙТА</span>
 							</div>
-							<a href="" class="footer__link">
-								- Link here
-							</a>
-							<a href="" class="footer__link">
-								- Link here
-							</a>
-							<a href="" class="footer__link">
-								- Link here
-							</a>
-						</div>
-						<div class="footer__item-link footer__item-link--end">
-							<div class="footer__link-title">
-								Title for links
+							<div class="welcome__description">
+								It is a long established fact that a reader will be distracted by <span>the readable content</span> of a page when looking at its layout. The point of using Lorem Ipsum is that it has <span>a more-or-less normal</span> distribution of letters, as opposed to using 'Content here,
 							</div>
-							<a href="" class="footer__link">
-								- Link here
-							</a>
-							<a href="" class="footer__link">
-								- Link here
-							</a>
-							<a href="" class="footer__link">
-								- Link here
-							</a>
+							<div class="welcome-btns">
+								<a href="" class="btn-c">
+									<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M30.99 11.84C30.99 11.83 30.99 11.81 30.98 11.8C29.87 5.30999 23.58 3.13999 23.32 3.04999C23.1 2.97999 22.86 2.97999 22.64 3.06999L1.64 11.07C1.59 11.09 1.54 11.11 1.5 11.14C1.46 11.16 1.41 11.19 1.38 11.22C1.34 11.25 1.3 11.29 1.27 11.32C1.14 11.46 1.05 11.63 1.02 11.81C1.01 11.87 1 11.93 1 11.99V12V26C1 27.65 2.35 29 4 29H28C29.65 29 31 27.65 31 26V12C31 11.95 31 11.89 30.99 11.84ZM27.73 15H27.12H26H20H18.88H18.27H3V13H29V15H27.73ZM28 27H4C3.45 27 3 26.55 3 26V20H19.76L18.76 18H3V17H18.26H18.83H19.39L19.89 18L20.89 20L22.11 22.45C22.28 22.79 22.62 23 23 23C23.38 23 23.72 22.79 23.89 22.45L25.12 20L26.12 18L26.62 17H27.18H27.74H29V18H27.24L26.24 20H29V26C29 26.55 28.55 27 28 27Z" fill="white"/>
+									</svg>								
+									<span>Купити торт</span>
+								</a>
+								<a href="" class="btn-c btn-c--second">
+									<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M30.99 11.84C30.99 11.83 30.99 11.81 30.98 11.8C29.87 5.30999 23.58 3.13999 23.32 3.04999C23.1 2.97999 22.86 2.97999 22.64 3.06999L1.64 11.07C1.59 11.09 1.54 11.11 1.5 11.14C1.46 11.16 1.41 11.19 1.38 11.22C1.34 11.25 1.3 11.29 1.27 11.32C1.14 11.46 1.05 11.63 1.02 11.81C1.01 11.87 1 11.93 1 11.99V12V26C1 27.65 2.35 29 4 29H28C29.65 29 31 27.65 31 26V12C31 11.95 31 11.89 30.99 11.84ZM27.73 15H27.12H26H20H18.88H18.27H3V13H29V15H27.73ZM28 27H4C3.45 27 3 26.55 3 26V20H19.76L18.76 18H3V17H18.26H18.83H19.39L19.89 18L20.89 20L22.11 22.45C22.28 22.79 22.62 23 23 23C23.38 23 23.72 22.79 23.89 22.45L25.12 20L26.12 18L26.62 17H27.18H27.74H29V18H27.24L26.24 20H29V26C29 26.55 28.55 27 28 27Z" fill="white"/>
+									</svg>								
+									<span>Купити торт</span>
+								</a>
+							</div>
 						</div>
 					</div>
-				</footer>
-			</main>
-	<!-- editor -->
+				</div>
+				<section class="about-us">
+					<div class="container">
+						<div class="about-us-wrapper">
+							<div class="about-us-text">
+								<div class="about-us__main-title global-title">
+									<div class="global-title__img">
+										<svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M51.3272 19.61C51.3272 19.5935 51.3272 19.5603 51.3106 19.5438C49.4722 8.79471 39.0544 5.20065 38.6237 5.05159C38.2594 4.93565 37.8619 4.93565 37.4975 5.08471L2.71625 18.3347C2.63344 18.3678 2.55063 18.401 2.48438 18.4506C2.41812 18.4838 2.33531 18.5335 2.28562 18.5831C2.21938 18.6328 2.15312 18.6991 2.10344 18.7488C1.88812 18.9806 1.73906 19.2622 1.68937 19.5603C1.67281 19.6597 1.65625 19.7591 1.65625 19.8585V19.875V43.0625C1.65625 45.7953 3.89219 48.0313 6.625 48.0313H46.375C49.1078 48.0313 51.3438 45.7953 51.3438 43.0625V19.875C51.3438 19.7922 51.3438 19.6928 51.3272 19.61ZM45.9278 24.8438H44.9175H43.0625H33.125H31.27H30.2597H4.96875V21.5313H48.0312V24.8438H45.9278ZM46.375 44.7188H6.625C5.71406 44.7188 4.96875 43.9735 4.96875 43.0625V33.125H32.7275L31.0713 29.8125H4.96875V28.1563H30.2431H31.1872H32.1147L32.9428 29.8125L34.5991 33.125L36.6197 37.1828C36.9013 37.746 37.4644 38.0938 38.0938 38.0938C38.7231 38.0938 39.2862 37.746 39.5678 37.1828L41.605 33.125L43.2612 29.8125L44.0894 28.1563H45.0169H45.9444H48.0312V29.8125H45.1162L43.46 33.125H48.0312V43.0625C48.0312 43.9735 47.2859 44.7188 46.375 44.7188Z" fill="#A9DD67" />
+										</svg>
+									</div>
+									<div class="global-title__text">
+										Про нас
+									</div>
+								</div>
+								<div class="about-us__title">
+									Субтайтл для секції
+								</div>
+								<div class="about-us__description">
+									Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в 
+								</div>
+								<div class="about-us-catalog">
+									<div class="about-us-catalog__wrap">
+										<div class="about-us-catalog__item">
+											<div class="about-us-catalog__img">
+												<img src="img/catalog.png" alt="">
+											</div>
+											<div class="about-us-catalog__title">
+												Назва тортіка
+											</div>
+											<div class="about-us-catalog-buy">
+												<div class="about-us-catalog-buy__price">
+													1000грн
+												</div>
+												<div class="about-us-catalog-buy__btn">
+													<a href="">
+														<svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M11.3785 4.50317H9.53031V3.51489C9.53031 1.88003 8.14928 0.550049 6.44995 0.550049C4.75062 0.550049 3.36959 1.88003 3.36959 3.51489V4.50317H1.52138C1.0678 4.50317 0.699951 4.85648 0.699951 5.2938V11.2235C0.699951 12.3155 1.61944 13.2 2.75352 13.2H10.1464C11.2805 13.2 12.2 12.315 12.2 11.2235V5.2938C12.2 4.85648 11.8329 4.50317 11.3785 4.50317ZM4.60174 3.51489C4.60174 2.53402 5.43087 1.73599 6.44995 1.73599C7.46904 1.73599 8.29817 2.53402 8.29817 3.51489V4.50317H4.60174V3.51489ZM3.98567 6.67739C3.64683 6.67739 3.36959 6.41303 3.36959 6.08442C3.36959 5.75582 3.64683 5.49146 3.98567 5.49146C4.3245 5.49146 4.60174 5.75829 4.60174 6.08442C4.60174 6.41056 4.32707 6.67739 3.98567 6.67739ZM8.91424 6.67739C8.57411 6.67739 8.29817 6.41179 8.29817 6.08442C8.29817 5.75706 8.5754 5.49146 8.91424 5.49146C9.25308 5.49146 9.53031 5.75829 9.53031 6.08442C9.53031 6.41056 9.25564 6.67739 8.91424 6.67739Z" fill="white" />
+														</svg>
+														<span>Купити торт</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="about-us-catalog__wrap">
+										<div class="about-us-catalog__item">
+											<div class="about-us-catalog__img">
+												<img src="img/catalog.png" alt="">
+											</div>
+											<div class="about-us-catalog__title">
+												Назва тортіка
+											</div>
+											<div class="about-us-catalog-buy">
+												<div class="about-us-catalog-buy__price">
+													1000грн
+												</div>
+												<div class="about-us-catalog-buy__btn">
+													<a href="">
+														<svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M11.3785 4.50317H9.53031V3.51489C9.53031 1.88003 8.14928 0.550049 6.44995 0.550049C4.75062 0.550049 3.36959 1.88003 3.36959 3.51489V4.50317H1.52138C1.0678 4.50317 0.699951 4.85648 0.699951 5.2938V11.2235C0.699951 12.3155 1.61944 13.2 2.75352 13.2H10.1464C11.2805 13.2 12.2 12.315 12.2 11.2235V5.2938C12.2 4.85648 11.8329 4.50317 11.3785 4.50317ZM4.60174 3.51489C4.60174 2.53402 5.43087 1.73599 6.44995 1.73599C7.46904 1.73599 8.29817 2.53402 8.29817 3.51489V4.50317H4.60174V3.51489ZM3.98567 6.67739C3.64683 6.67739 3.36959 6.41303 3.36959 6.08442C3.36959 5.75582 3.64683 5.49146 3.98567 5.49146C4.3245 5.49146 4.60174 5.75829 4.60174 6.08442C4.60174 6.41056 4.32707 6.67739 3.98567 6.67739ZM8.91424 6.67739C8.57411 6.67739 8.29817 6.41179 8.29817 6.08442C8.29817 5.75706 8.5754 5.49146 8.91424 5.49146C9.25308 5.49146 9.53031 5.75829 9.53031 6.08442C9.53031 6.41056 9.25564 6.67739 8.91424 6.67739Z" fill="white" />
+														</svg>
+														<span>Купити торт</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="about-us-catalog__wrap">
+										<div class="about-us-catalog__item">
+											<div class="about-us-catalog__img">
+												<img src="img/catalog.png" alt="">
+											</div>
+											<div class="about-us-catalog__title">
+												Назва тортіка
+											</div>
+											<div class="about-us-catalog-buy">
+												<div class="about-us-catalog-buy__price">
+													1000грн
+												</div>
+												<div class="about-us-catalog-buy__btn">
+													<a href="">
+														<svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M11.3785 4.50317H9.53031V3.51489C9.53031 1.88003 8.14928 0.550049 6.44995 0.550049C4.75062 0.550049 3.36959 1.88003 3.36959 3.51489V4.50317H1.52138C1.0678 4.50317 0.699951 4.85648 0.699951 5.2938V11.2235C0.699951 12.3155 1.61944 13.2 2.75352 13.2H10.1464C11.2805 13.2 12.2 12.315 12.2 11.2235V5.2938C12.2 4.85648 11.8329 4.50317 11.3785 4.50317ZM4.60174 3.51489C4.60174 2.53402 5.43087 1.73599 6.44995 1.73599C7.46904 1.73599 8.29817 2.53402 8.29817 3.51489V4.50317H4.60174V3.51489ZM3.98567 6.67739C3.64683 6.67739 3.36959 6.41303 3.36959 6.08442C3.36959 5.75582 3.64683 5.49146 3.98567 5.49146C4.3245 5.49146 4.60174 5.75829 4.60174 6.08442C4.60174 6.41056 4.32707 6.67739 3.98567 6.67739ZM8.91424 6.67739C8.57411 6.67739 8.29817 6.41179 8.29817 6.08442C8.29817 5.75706 8.5754 5.49146 8.91424 5.49146C9.25308 5.49146 9.53031 5.75829 9.53031 6.08442C9.53031 6.41056 9.25564 6.67739 8.91424 6.67739Z" fill="white" />
+														</svg>
+														<span>Купити торт</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="about-us-img">
+								<img src="img/about.png" alt="">
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
 		</div>
+		<footer class="footer">
+			<p>Текст в футере</p>
+		</footer>
 		<script src="js/index.js"></script>
 	</body>
 </html>

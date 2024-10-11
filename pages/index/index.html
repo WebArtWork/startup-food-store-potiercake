@@ -1,77 +1,78 @@
-<div class="index">
-	<img class="index-avatar" src="img/avatar.png" alt="" />
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Прижимание footer к низу окна браузера с помощью CSS</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <div class="first-screen">
+				<header class="header">
+					<div class="container">
+						<div class="header-wrap">
+							<div class="header-logo">
+								<div class="header-logo__svg">
+									<img src="img/logo.svg" alt="">
+								</div>
+								<div class="header-logo__text">
+									<span>НАЗВА</span>
+									ЛОГО
+								</div>
+							</div>
+							<ul class="header-navigtion">
+								<li>
+									<a href="">Меню пункт</a>
+								</li>
+								<li>
+									<a href="">Меню пункт</a>
+								</li>
+								<li>
+									<a href="">Меню пункт</a>
+								</li>
+								<li>
+									<a href="">Меню пункт</a>
+								</li>
+							</ul>
+							<div class="header-socials">
+								<a href="">
+									<img src="img/icons/call.svg" alt="">
+								</a>
+								<a href="">
+									<img src="img/icons/cart.svg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</header>
+				<div class="welcome">
+					<div class="welcome__title">
+						НАЗВА
+						<span>НАШОГО САЙТА</span>
+					</div>
+					<div class="welcome__description">
+						It is a long established fact that a reader will be distracted by <span>the readable content</span> of a page when looking at its layout. The point of using Lorem Ipsum is that it has <span>a more-or-less normal</span> distribution of letters, as opposed to using 'Content here,
+					</div>
+					<div class="welcome-btns">
+						<a href="" class="btn">
+							<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M30.99 11.84C30.99 11.83 30.99 11.81 30.98 11.8C29.87 5.30999 23.58 3.13999 23.32 3.04999C23.1 2.97999 22.86 2.97999 22.64 3.06999L1.64 11.07C1.59 11.09 1.54 11.11 1.5 11.14C1.46 11.16 1.41 11.19 1.38 11.22C1.34 11.25 1.3 11.29 1.27 11.32C1.14 11.46 1.05 11.63 1.02 11.81C1.01 11.87 1 11.93 1 11.99V12V26C1 27.65 2.35 29 4 29H28C29.65 29 31 27.65 31 26V12C31 11.95 31 11.89 30.99 11.84ZM27.73 15H27.12H26H20H18.88H18.27H3V13H29V15H27.73ZM28 27H4C3.45 27 3 26.55 3 26V20H19.76L18.76 18H3V17H18.26H18.83H19.39L19.89 18L20.89 20L22.11 22.45C22.28 22.79 22.62 23 23 23C23.38 23 23.72 22.79 23.89 22.45L25.12 20L26.12 18L26.62 17H27.18H27.74H29V18H27.24L26.24 20H29V26C29 26.55 28.55 27 28 27Z" fill="white"/>
+							</svg>								
+							<span>Купити торт</span>
+						</a>
+						<a href="" class="btn">
+							<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M30.99 11.84C30.99 11.83 30.99 11.81 30.98 11.8C29.87 5.30999 23.58 3.13999 23.32 3.04999C23.1 2.97999 22.86 2.97999 22.64 3.06999L1.64 11.07C1.59 11.09 1.54 11.11 1.5 11.14C1.46 11.16 1.41 11.19 1.38 11.22C1.34 11.25 1.3 11.29 1.27 11.32C1.14 11.46 1.05 11.63 1.02 11.81C1.01 11.87 1 11.93 1 11.99V12V26C1 27.65 2.35 29 4 29H28C29.65 29 31 27.65 31 26V12C31 11.95 31 11.89 30.99 11.84ZM27.73 15H27.12H26H20H18.88H18.27H3V13H29V15H27.73ZM28 27H4C3.45 27 3 26.55 3 26V20H19.76L18.76 18H3V17H18.26H18.83H19.39L19.89 18L20.89 20L22.11 22.45C22.28 22.79 22.62 23 23 23C23.38 23 23.72 22.79 23.89 22.45L25.12 20L26.12 18L26.62 17H27.18H27.74H29V18H27.24L26.24 20H29V26C29 26.55 28.55 27 28 27Z" fill="white"/>
+							</svg>								
+							<span>Купити торт</span>
+						</a>
+					</div>
+				</div>
+			</div>
 
-	<div class="index-title">Welcome to WAW Template</div>
-	<div class="index-readme">
-		<div class="index-readme__item">
-			To create new page you can type in terminal:
-			<span class="index-readme__code">waw page NAME</span>
-		</div>
-		<div class="index-readme__item">
-			You can change port in
-			<span class="index-readme__code">config.json</span>
-			of development webiste
-			<a class="index-readme__link" href="http://localhost:8000">localhost:8000</a>
-		</div>
-		<div class="index-readme__item">
-			JSON in template.json is accesible over all pages
-		</div>
-		<div class="index-readme__item">
-			JSON in page.json of each page is accesible only of that specific
-			page
-		</div>
-		<div class="index-readme__item">
-			To build project you can type in terminal:
-			<span class="index-readme__code">waw build</span>
-			which will take JSON info and put it into html of dist folder.
-		</div>
-		<div class="index-readme__item">
-			General idea of variables, is that you can modify those on back-end or over
-			<span class="index-readme__code">config.json</span>
-		</div>
-		<div class="index-readme__item">
-			More details of how to use template you can find in
-			<a class="index-readme__link" href="https://webartwork.github.io/wjst/docs">Wjst Documentation</a>
-		</div>
-		<div class="index-readme__item">
-			Styles: You should import each file to
-			<span class="index-readme__code">index.scss </span> located in
-			<span class="index-readme__code">css</span> folder and write SCSS
-			files in <span class="index-readme__code">css/scss</span>.
-		</div>
-	</div>
-	<div class="index-readme">
-		<div class="index-readme__title">Prefix:</div>
-		<div class="index-readme__item">
-			Prefix which we have in template.json serve as root id for the
-			template
-		</div>
-		<div class="index-readme__item">
-			For example file
-			<span class="index-readme__code">img/avatar.png</span>
-			can be served in html
-			<span class="index-readme__code">src="img/avatar.png"</span>
-			were our path is
-			<span class="index-readme__code">{prefix}{path}</span>
-		</div>
-		<div class="index-readme__item">
-			Prefix should be unique on project where we have more then one
-			template to serve files properly
-		</div>
-		<div class="index-readme__item">
-			To change prefix, you need simply to replace all in editor phrase
-			`/wjst-default` into new prefix `/newPrefixName`
-		</div>
-		<div class="index-readme__item">
-			To get served template by github pages, you simply have to replace
-			prefix to name of the repo and do
-			<span class="index-readme__code">waw build</span>
-			and then commit to branch which you set in settings > pages
-			<span class="index-readme__code">{repo}/settings/pages</span>
-			and after that you should able to see your wesite online, similar
-			this default repo is shown
-			<a class="index-readme__link"
-				href="https://webartwork.github.io/wjst-default">webartwork.github.io/wjst-default</a>
-		</div>
-	</div>
-</div>
+        </div>
+    </div>
+    <footer class="footer">
+        
+    </footer>
+</body>
+</html>
