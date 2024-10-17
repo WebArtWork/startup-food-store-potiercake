@@ -1,3 +1,4 @@
+
 .first-screen{
 	background: url('../img/first.png');	
 	background-size: cover;
@@ -210,9 +211,144 @@
 		}
 	}
 	&__main-btn{
-		padding-top: 40px;
+		padding: 40px 0 70px 0;
 		a{
 			margin: 0 auto;
+		}
+	}
+}
+
+//map
+
+.map{
+	&__iframe{
+		position: relative;
+	}
+	&-info{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		height: fit-content !important;
+		transform: translate(-50%, -50%);
+		&__wrapper{
+			max-width: 560px;
+			width: 100%;
+			backdrop-filter: blur(4px);
+			box-shadow: 0 4px 20px 0 rgba(255, 255, 255, 0.11);
+			background: rgba(255, 255, 255, 0.71);
+			border-radius: 32px;
+			border: 0.30px solid #a9dd67;
+			padding: 30px 80px 30px 30px;
+		}
+	}
+	&__main-title{
+		font-weight: 700;
+		font-size: 22px;
+		color: #a9dd67;
+		padding-bottom: 10px;
+	}
+	&__description{
+		font-size: 18px;
+		padding-bottom: 15px;
+		span{
+			font-weight: 700;
+		}
+	}
+	&-title{
+		display: flex;
+		align-items: center;
+		margin-bottom: 20px;
+		&__img{
+			display: flex;
+		}
+		&__text{
+			margin-right: 10px;
+			font-size: 22px;
+			color: #3e3c3c;
+			text-transform: uppercase;
+		}
+	}
+	&-link{
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+		span{
+			color: #2d3424;
+			margin-left: 10px;
+		}
+	}
+	&-social{
+		padding-top: 20px;
+		&__wrapper{
+			display: flex;
+			align-items: center;
+			a{
+				display: flex;
+				margin-right: 20px;
+			}
+		}
+	}
+	&-adress{
+		padding-top: 20px;
+	}
+}
+
+//footer
+
+.footer{
+	padding: 30px 0;
+	&-list{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+	}
+	&__wrap{
+		&--logo{
+			flex: 20%;
+			max-width: 20%;
+			.header-logo__text{
+				color: #3e3c3c;
+			}
+		}
+		&--links{
+			flex: 0 0 60%;
+			max-width: 60%;
+			.footer__item{
+				display: flex;
+				justify-content: space-between;
+				padding: 0 30px;
+			}
+		}
+		&--socials{
+			flex: 0 0 20%;
+			max-width: 20%;
+		}
+	}
+	&-link{
+		padding: 0 5px;
+		&__title{
+			font-size: 16px;
+			color: #a9dd67;
+			padding-bottom: 10px;
+		}
+		&__go{
+			font-size: 14px;
+			color: #3e3c3c;
+			transition: all .3s;
+			padding-bottom: 5px;
+			display: block;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+	&__socials{
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		a{
+			flex: 0 0 50%;
+			max-width: 50%;
 		}
 	}
 }

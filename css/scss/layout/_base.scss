@@ -67,9 +67,12 @@ ul {
 /* === PAGE LAYOUT === */
 
 .header{
-	padding-top: 30px;
+	padding: 15px 0;
 	position: fixed;
     width: 100%;
+	transition: background 0.3s; 
+    background: transparent; 
+	z-index: 3;
 	&-wrap{
 		display: flex;
 		align-items: center;
@@ -114,7 +117,9 @@ ul {
 		}
 	}
 }
-
+.scrolled {
+    background: rgba(0, 0, 0, 0.55); /* Фон при скролле */
+}
 .global-title{
 	display: flex;
 	align-items: center;
