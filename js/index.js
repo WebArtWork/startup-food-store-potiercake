@@ -119,3 +119,8 @@ document.addEventListener('scroll', () => {
     const header = document.querySelector('.header');
     header.classList.toggle('scrolled', window.scrollY > 0);
 });
+
+document.querySelector(".burger-wrap").addEventListener("click", () => {
+    document.querySelector(".header-navigtion").classList.toggle("header-navigtion--open");
+    document.querySelector(".burger").classList.toggle("burger--close");
+});

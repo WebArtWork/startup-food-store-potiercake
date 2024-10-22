@@ -11,6 +11,7 @@ body {
   flex-direction: column;
   height: 100%;
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 .content {
   flex: 1 0 auto;
@@ -59,7 +60,7 @@ ul {
 }
 
 .burger:after {
-	bottom: -1px;
+	bottom: 0;
 }
 
 /* burger */
@@ -117,6 +118,7 @@ ul {
 		}
 	}
 }
+
 .scrolled {
     background: rgba(0, 0, 0, 0.55); /* Фон при скролле */
 }
@@ -174,7 +176,50 @@ ul {
 		}
 	}
 }
-
+@media screen and (max-width: 1199px) {
+	.header-navigtion li a {
+		font-size: 18px;
+	}
+	.header-logo__text{
+		font-size: 18px;
+	}
+	.global-title__img {
+		margin-right: 20px;
+		svg{
+			width: 48px;
+			height: 48px;
+		}
+	}
+	.global-title__text {
+		font-size: 38px;
+	}
+}
+@media screen and (max-width: 479px) {
+	.header-socials a {
+		margin-right: 25px;
+	}
+	.header-logo__svg img {
+        height: 40px;
+        width: 40px;
+    }
+	.header-logo__text{
+		margin-left: 10px;
+	}
+	.btn-c {
+		max-width: 270px;
+		height: 50px;
+		font-size: 21px;
+		svg {
+			margin-right: 15px;
+			width: 26px;
+			height: 26px;
+		}
+	}
+	.global-title__img svg {
+        width: 40px;
+        height: 40px;
+    }
+}
 .main-content {
 	display: flex;
 	padding-top: 85px;
@@ -375,14 +420,15 @@ ul {
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
 	.burger-wrap {
 		display: flex;
 		align-items: center;
 		position: absolute;
 		z-index: 3;
-		right: 15px;
-		transform: translateY(-50%);
+		right: unset;
+		left: 50%;
+		transform: translate(-50%, -50%);
 		top: 50%;
 	}
 
@@ -403,4 +449,59 @@ ul {
 	.burger--close::before {
 		transform-origin: 0;
 	}
+	.header-navigtion {
+        position: relative;
+        display: block;
+        max-height: unset;
+        width: unset;
+        opacity: 1;
+        border: none;
+        margin: unset;
+    }
+
+    .header-navigtion {
+        position: absolute;
+        top: 73px;
+        width: 100%;
+        left: 0;
+        background: rgba(0, 0, 0, 0.541);
+        z-index: 3;
+        padding: 0;
+        opacity: 0;
+        display: flex;
+        max-height: 0;
+        overflow: hidden;
+        transition: all .3s;
+        border-bottom: 1px solid black;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-navigtion {
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-navigtion li {
+        display: block;
+        margin-right: 0;
+        padding-right: 0;
+        font-size: 20px;
+    }
+
+    .header-navigtion li a {
+        display: block;
+        padding: 10px 0;
+        border: none;
+        text-align: center;
+        color: block;
+    }
+
+    .header-navigtion--open {
+        max-height: 500px;
+        opacity: 1;
+        padding: 15px 0;
+    }
 }
