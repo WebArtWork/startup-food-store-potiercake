@@ -1,0 +1,145 @@
+.header{
+	&--products{
+		position: relative !important;
+		background: rgba(0, 0, 0, .55) !important;
+	}
+}
+.products{
+	&-wrap{
+		background: url('../img/product.png');
+		background-size: cover;
+	}
+	&-wrapper{
+		display: flex;
+		flex-flow: row wrap;
+		background: #ffffff38;
+		margin: 20px 0;
+		overflow: hidden;
+		height: calc(100vh - 121px);
+		border-radius: 12px;
+		color: #fff;
+	}
+	&-sidebar{
+		flex: 0 0 260px;
+		&__content{
+			padding: 15px;
+		}
+	}
+	&-main{
+		flex: 1 0;
+		&__content{
+			padding: 15px;
+			height: calc(100vh - 114px);
+			overflow: scroll;
+		}
+	}
+	&-item{
+		display: flex;
+		flex-flow: row wrap;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+		border-bottom: 1px solid #cfc5c5;
+	}
+	&-text{
+		flex:1 0;
+		padding-left: 20px;
+		&__title{
+			font-size: 18px;
+			font-weight: 700;
+			color: #93bb61;
+			text-transform: uppercase;
+			padding-bottom: 10px;
+		}
+		&-info{
+			display: flex;
+			padding: 5px 0;
+			&__item{
+				display: flex;
+				align-items: center;
+				margin-right: 20px;
+			}
+			&__img{
+				display: flex;
+				svg{
+					width: 28px;
+					height: 28px;
+					path{
+						fill: #a9dd67;
+					}
+				}
+			}
+			&__text{
+				padding-left: 10px;
+				font-weight: 600;
+			}
+		}
+		&__btn{
+			margin-top: 5px;
+			a{
+				width: 140px;
+			}
+		}
+	}
+}
+
+.sidebar{
+	&-title{
+		display: flex;
+		align-items: center;
+		margin-bottom: 30px;
+		&__img{
+			display: flex;
+			margin-right: 10px;
+			svg{
+				fill: #a9dd67;
+			}
+		}
+		&__text{
+			font-weight: 600;
+		}
+	}
+	&-link{
+		transition: all .3s;
+		display: block;
+		margin-bottom: 20px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+		&:hover{
+			.sidebar-link__title{
+				color: #a9dd67;
+			}
+		}
+		&__img{
+			position: relative;
+			&::before{
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, #000 100%);
+				top: 0;
+				left: 0;
+				border-radius: 8px;
+			}
+			img{
+				width: 100%;
+				height: 90px;
+				object-fit: cover;
+				border-radius: 8px;
+			}
+		}
+		&__title{
+			position: absolute;
+			bottom: 9px;
+			left: 50%;
+			transform: translateX(-50%);
+			color: #fff;
+			width: 100%;
+			text-align: center;
+			font-size: 15px;
+			font-weight: 600;
+			transition: all .3s;
+		}
+	}
+}
