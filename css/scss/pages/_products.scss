@@ -21,6 +21,9 @@
 	}
 	&-sidebar{
 		flex: 0 0 260px;
+		&--order{
+			display: none;
+		}
 		&__content{
 			padding: 15px;
 		}
