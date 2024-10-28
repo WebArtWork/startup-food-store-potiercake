@@ -124,3 +124,8 @@ document.querySelector(".burger-wrap").addEventListener("click", () => {
     document.querySelector(".header-navigtion").classList.toggle("header-navigtion--open");
     document.querySelector(".burger").classList.toggle("burger--close");
 });
+
+document.querySelector(".burger-side").addEventListener("click", () => {
+    document.querySelector(".products-sidebar").classList.toggle("products-sidebar--open");
+    document.querySelector(".burger-side").classList.toggle("burger-sider--active");
+});

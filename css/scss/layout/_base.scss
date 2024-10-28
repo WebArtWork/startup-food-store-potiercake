@@ -163,6 +163,7 @@ ul {
 		border-radius: 120px;
 		z-index: -1;
 		bottom: -6px;
+		transition: all .3s;
 	}
 	svg{
 		margin-right: 20px
@@ -172,8 +173,19 @@ ul {
 		background: transparent;
 		border: 2px solid #a9dd67;
 		&::before{
-			display: none;
+			opacity: 0;
 		}
+	}
+}
+
+.btn-c:hover:before{
+	bottom: 0;
+}
+.btn-c--second:hover{
+	background: #a9dd67;
+	&::before{
+		opacity: 1;
+		bottom: -6px;
 	}
 }
 @media screen and (max-width: 1199px) {
@@ -430,6 +442,7 @@ ul {
 		left: 50%;
 		transform: translate(-50%, -50%);
 		top: 50%;
+		z-index: 7;
 	}
 
 	.burger--close {
@@ -447,7 +460,8 @@ ul {
 
 	.burger--close::after,
 	.burger--close::before {
-		transform-origin: 0;
+		transform-origin: 1px;
+		background-color: #a9dd67;
 	}
 	.header-navigtion {
         position: relative;
@@ -501,7 +515,8 @@ ul {
 
     .header-navigtion--open {
         max-height: 500px;
-        opacity: 1;
-        padding: 15px 0;
+        top: 0;
+		padding: 57px 0 15px 0;
+		opacity: 1;
     }
 }
