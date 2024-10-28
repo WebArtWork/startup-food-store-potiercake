@@ -107,8 +107,15 @@ ul {
 	&-logo{
 		display: flex;
 		align-items: center;
+		&__svg{
+			img{
+				width: 70px;
+				height: 70px;
+			}
+		}
 		&__text{
 			font-size: 22px;
+			display: none;
 			color: #fff;
 			margin-left: 20px;
 			span{
