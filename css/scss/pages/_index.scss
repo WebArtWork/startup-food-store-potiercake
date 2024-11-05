@@ -369,8 +369,8 @@
 @media screen and (max-width: 1499px) {
 	.header-logo__svg{
 		img{
-			height: 48px;
-    		width: 48px;
+			height: 48px !important;
+    		width: 48px !important;
 		}
 	}
 	.header-logo__text {
@@ -392,6 +392,9 @@
 	.about-us-img {
 		margin-right: -169px;
 		flex: 0 0 730px;
+	}
+	.articles-all {
+		padding-top: 110px;
 	}
 }
 

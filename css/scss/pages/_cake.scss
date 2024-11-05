@@ -1,0 +1,67 @@
+.select-container {
+    margin-bottom: 20px;
+    flex: 0 0 200px;
+    select {
+        padding: 10px;
+        font-size: 16px;
+        margin-top: 10px;
+        background-color: transparent;
+        max-width: 200px;
+        width: 100%;
+        border-radius: 120px;
+        border: 2px solid #a9dd67;
+        font-weight: 500;
+    }
+    
+    select:focus {
+        outline: none;
+        border-color: #007bff;
+    }
+}
+
+
+
+.output-container {
+    margin-top: 30px;
+}
+
+#output {
+    font-size: 18px;
+    color: #333;
+    font-style: italic;
+    text-align: center;
+    font-weight: 600;
+    margin: 0;
+    padding-bottom: 12px;
+}
+.select-list{
+    padding-top: 20px;
+    display: flex;
+    max-width: 700px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.cake-info{
+    justify-content: center;
+    .products-text-info__img svg path {
+        fill: #a9dd67;
+    }
+    .products-text-info__item{
+        &:last-child{
+            margin: 0;
+        }
+    }
+}
+
+.cake__btn{
+    padding: 20px 0;
+    .btn-c{
+        margin: 0 auto;
+        max-width: 260px;
+        height: 50px;
+    }
+}
+.cake-img{
+    text-align: center;
+    padding-top: 100px;
+}

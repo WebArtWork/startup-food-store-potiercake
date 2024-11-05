@@ -195,6 +195,26 @@ ul {
 		bottom: -6px;
 	}
 }
+@media screen and (max-width: 1499px) {
+	.header-logo__svg img {
+        height: 48px !important;
+        width: 48px !important;
+    }
+	.header-navigtion li a {
+		font-size: 18px;
+	}
+	.header-socials{
+		a{
+			img{
+				width: 26px;
+				height: 26px;
+			}
+		}
+	}
+	.header {
+		padding: 8px 0;
+	}
+}
 @media screen and (max-width: 1199px) {
 	.header-navigtion li a {
 		font-size: 18px;
