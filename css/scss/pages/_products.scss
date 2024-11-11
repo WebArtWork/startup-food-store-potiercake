@@ -8,6 +8,7 @@
 	&-wrap{
 		background: url('../img/product.png');
 		background-size: cover;
+		padding-top: 90px;
 	}
 	&-wrapper{
 		display: flex;
@@ -153,7 +154,11 @@
 .burger-side{
 	display: none
 }
-
+@media screen and (max-width: 1499px) {
+	.products-wrap{
+		padding-top: 70px;
+	}
+}
 @media screen and (max-width: 1199px) {
 	.sidebar-title {
 		margin-bottom: 20px;

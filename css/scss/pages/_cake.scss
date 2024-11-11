@@ -64,4 +64,30 @@
 .cake-img{
     text-align: center;
     padding-top: 100px;
+    svg{
+        max-width: 400px;
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .select-list{
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .select-container{
+        margin: 0 5px;
+    }
+}
+@media screen and (max-width: 479px) {
+    .cake-img svg {
+        max-width: 100%;
+    }
+    .select-container{
+        flex: 0 0 100%;
+        text-align: center;
+        select{
+            max-width: 400px;
+        }
+    }
 }
