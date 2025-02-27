@@ -585,6 +585,16 @@
 		max-width: 25%;
 		text-align: center;
 	}
+	.footer__socials{
+		justify-content: center;
+	}
+	.global-title__text {
+        font-size: 28px;
+    }
+	.map-info__wrapper {
+        max-width: 100%;
+		padding: 30px 50px 30px 30px;
+    }
 }
 
 @media screen and (max-width: 479px) {

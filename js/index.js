@@ -129,3 +129,11 @@ document.querySelector(".burger-side").addEventListener("click", () => {
     document.querySelector(".products-sidebar").classList.toggle("products-sidebar--open");
     document.querySelector(".burger-side").classList.toggle("burger-sider--active");
 });
+
+$('a.anchor').on('click', function (e) {
+	e.preventDefault();
+	var $anchor = $(this).attr('href');
+	var $stop = $($anchor).offset().top - 0;
+	$('body,html').stop(true, true).animate({scrollTop: $stop}, 1000);
+	return false;
+});
