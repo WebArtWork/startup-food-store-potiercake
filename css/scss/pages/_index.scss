@@ -46,7 +46,8 @@
 		flex:1 0;
 	}
 	&-img{
-		margin-right: -220px;
+		//margin-right: -220px;
+		flex: 0 0 500px;
 	}
 	&__title{
 		padding-top:50px;
@@ -392,8 +393,8 @@
 		line-height: 1.4;
 	}
 	.about-us-img {
-		margin-right: -169px;
-		flex: 0 0 730px;
+		//margin-right: -169px;
+		flex: 0 0 500px;
 	}
 	.articles-all {
 		padding-top: 110px;
